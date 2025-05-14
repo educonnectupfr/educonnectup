@@ -21,6 +21,7 @@ export const paths = {
   maintenance: '/maintenance',
   pricing: '/pricing',
   payment: '/payment',
+  trainings: '/trainings',
   about: '/about-us',
   contact: '/contact-us',
   faqs: '/faqs',

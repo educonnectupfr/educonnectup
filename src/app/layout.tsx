@@ -42,6 +42,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  applicationName: 'educonnectup',
   icons: [
     {
       rel: 'icon',

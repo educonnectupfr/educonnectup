@@ -30,10 +30,9 @@ export function HomePricing({ sx, ...other }: BoxProps) {
 
   const renderDescription = () => (
     <SectionTitle
-      caption="plans"
-      title="Transparent"
-      txtGradient="pricing"
-      description="Choose from flexible pricing options designed to fit your business needs and budget with no hidden fees."
+      title="Nos offres "
+      txtGradient="tarifaires"
+      description="Choisissez le plan qui correspond le mieux à vos besoins — transparent, sans frais cachés."
       sx={{ mb: 8, textAlign: 'center' }}
     />
   );
@@ -199,28 +198,6 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
           </m.div>
         </Box>
 
-        <Box sx={{ gap: 2, display: 'flex' }}>
-          {plan.icons.map((icon, index) => (
-            <Box
-              component={m.img}
-              variants={varFade('in')}
-              key={icon}
-              alt={icon}
-              src={icon}
-              sx={{
-                width: 24,
-                height: 24,
-                ...(standardLicense && [1, 2].includes(index) && { display: 'none' }),
-              }}
-            />
-          ))}
-          {standardLicense && (
-            <Box component={m.span} variants={varFade('in')} sx={{ ml: -1 }}>
-              (only)
-            </Box>
-          )}
-        </Box>
-
         <Stack spacing={2.5}>
           {plan.commons.map((option) => (
             <Box
@@ -281,7 +258,7 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
             rel="noopener"
             href={paths.minimalStore}
           >
-            Get started
+            Commencer
           </Button>
         </m.div>
       </Box>
@@ -292,7 +269,7 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
 // ----------------------------------------------------------------------
 
 const PLANS = Array.from({ length: 3 }, (_, index) => ({
-  license: ['Standard', 'Plus', 'Extended'][index],
+  license: ['Standard', 'Plus', 'Pro'][index],
   price: [69, 129, 599][index],
   commons: [
     'One end products',

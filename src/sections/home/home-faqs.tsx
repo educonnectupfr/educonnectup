@@ -134,9 +134,9 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
 
   const renderDescription = () => (
     <SectionTitle
-      caption="FAQs"
-      title="We’ve got the"
-      txtGradient="answers"
+      title="Questions "
+      txtGradient="fréquentes"
+      description="Trouvez les réponses aux questions les plus courantes. Si vous avez d'autres interrogations, n'hésitez pas à nous contacter !"
       sx={{ textAlign: 'center' }}
     />
   );
@@ -216,12 +216,12 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
       ]}
     >
       <m.div variants={varFade('in')}>
-        <Typography variant="h4">Still have questions?</Typography>
+        <Typography variant="h4">Vous avez encore des questions ?</Typography>
       </m.div>
 
       <m.div variants={varFade('in')}>
         <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-          Please describe your case to receive the most accurate advice
+          Veuillez décrire votre cas pour recevoir les conseils les plus précis
         </Typography>
       </m.div>
 
@@ -232,7 +232,7 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
           href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
           startIcon={<Iconify icon="fluent:mail-24-filled" />}
         >
-          Contact us
+          Contactez-nous
         </Button>
       </m.div>
     </Box>

@@ -14,21 +14,16 @@ import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
-
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
-
 import { _mock } from 'src/_mock';
 import { varFade, MotionContainer } from 'src/components/animate';
-import Image from 'next/image';
 import { varAlpha } from 'minimal-shared/utils';
 import { CONFIG } from 'src/global-config';
 
 // ----------------------------------------------------------------------
 
-const smKey: Breakpoint = 'sm';
 const mdKey: Breakpoint = 'md';
-const lgKey: Breakpoint = 'lg';
 
 const motionProps: MotionProps = {
   variants: varFade('inUp', { distance: 24 }),
@@ -39,8 +34,6 @@ export function HomeHero({ sx, ...other }: BoxProps) {
 
   const theme = useTheme();
   const mdUp = useMediaQuery(theme.breakpoints.up(mdKey));
-
-  const distance = mdUp ? scrollProgress.percent : 0;
 
   const opacity: MotionValue<number> = useTransform(
     scrollProgress.scrollY,
@@ -120,16 +113,24 @@ export function HomeHero({ sx, ...other }: BoxProps) {
             },
           }}
         >
-          <Grid container spacing={{ xs: 5, md: 8 }} sx={{ position: 'relative', zIndex: 9 }}>
+          <Grid container spacing={{ xs: 5, md: 0 }} sx={{ position: 'relative', zIndex: 9 }}>
             <Grid size={{ xs: 12, md: 6, lg: 5 }}>
               <Box sx={{ display: 'flex', flexDirection: 'column', rowGap: '1rem' }}>
                 <m.div {...motionProps}>
-                  <Typography variant="h1" color="secondary">
+                  <Typography
+                    variant="h1"
+                    color="secondary"
+                    sx={{ textAlign: { xs: 'center', md: 'initial' } }}
+                  >
                     {`L'éducation crée un meilleur avenir`}
                   </Typography>
                 </m.div>
                 <m.div {...motionProps}>
-                  <Typography variant="body1" color="textSecondary">
+                  <Typography
+                    variant="body1"
+                    color="textSecondary"
+                    sx={{ textAlign: { xs: 'center', md: 'initial' } }}
+                  >
                     {`The starting point for your next project is based on MUI. \nEasy customization helps you build apps faster and better.`}
                   </Typography>
                 </m.div>
@@ -138,6 +139,7 @@ export function HomeHero({ sx, ...other }: BoxProps) {
                   <Box
                     sx={{
                       display: 'flex',
+                      justifyContent: { xs: 'center', md: 'initial' },
                       flexWrap: 'wrap',
 
                       gap: { xs: 1.5, sm: 2 },
@@ -173,7 +175,7 @@ export function HomeHero({ sx, ...other }: BoxProps) {
                       gap: 1.5,
                       display: 'flex',
                       flexWrap: 'wrap',
-
+                      justifyContent: { xs: 'center', md: 'initial', alignItems: 'center' },
                       typography: 'subtitle2',
                     }}
                   >

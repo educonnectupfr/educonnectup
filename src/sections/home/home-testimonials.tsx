@@ -74,9 +74,9 @@ export function HomeTestimonials({ sx, ...other }: BoxProps) {
 
   const renderDescription = () => (
     <SectionTitle
-      caption="testimonials"
-      title="Rumors are flying"
-      txtGradient="that..."
+      title=" Ce que disent nos "
+      txtGradient="utilisateurs"
+      description="Des témoignages authentiques de ceux qui utilisent notre plateforme au quotidien. Leur avis compte."
       sx={{ mb: { xs: 5, md: 8 }, textAlign: 'center' }}
     />
   );

@@ -9,20 +9,18 @@ import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 
 import { paths } from 'src/routes/paths';
-import { usePathname } from 'src/routes/hooks';
 
 import { Logo } from 'src/components/logo';
 
 import { NavMobile } from './nav/mobile';
 import { NavDesktop } from './nav/desktop';
-import { Footer, HomeFooter } from './footer';
+import { Footer } from './footer';
 import { MainSection } from '../core/main-section';
 import { MenuButton } from '../components/menu-button';
 import { LayoutSection } from '../core/layout-section';
 import { HeaderSection } from '../core/header-section';
 import { navData as mainNavData } from '../nav-config-main';
 import { SignInButton } from '../components/sign-in-button';
-import { SettingsButton } from '../components/settings-button';
 
 import type { FooterProps } from './footer';
 import type { NavMainProps } from './nav/types';
@@ -53,11 +51,7 @@ export function MainLayout({
   slotProps,
   layoutQuery = 'md',
 }: MainLayoutProps) {
-  const pathname = usePathname();
-
   const { value: open, onFalse: onClose, onTrue: onOpen } = useBoolean();
-
-  const isHomePage = pathname === '/';
 
   const navData = slotProps?.nav?.data ?? mainNavData;
 
@@ -108,8 +102,7 @@ export function MainLayout({
               variant="contained"
               color="primary"
               rel="noopener"
-              target="_blank"
-              href={paths.minimalStore}
+              href={paths.auth.supabase.signUp}
               sx={(theme) => ({
                 display: 'none',
                 [theme.breakpoints.up(layoutQuery)]: { display: 'inline-flex' },

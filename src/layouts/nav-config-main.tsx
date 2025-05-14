@@ -15,10 +15,10 @@ export const navData: NavMainProps['data'] = [
     icon: <Iconify width={22} icon="solar:file-bold-duotone" />,
     children: [
       {
-        subheader: 'Other',
+        subheader: '',
         items: [
-          { title: 'Formations', path: paths.about },
-          { title: 'Écoles', path: paths.contact },
+          { title: 'Formations', path: paths.trainings },
+          { title: 'Écoles', path: paths.faqs },
           { title: 'Entreprises', path: paths.faqs },
         ],
       },
