@@ -12,13 +12,13 @@ type Props = {
 
 export function TraningList({ trainings }: Props) {
   return (
-    <>
+    <Box sx={{ flex: 1 }}>
       <Box
         sx={{
           gap: 3,
-          marginBlock: '1.5rem',
+
           display: 'grid',
-          gridTemplateColumns: { xs: 'repeat(1, 1fr)', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
+          gridTemplateColumns: { xs: 'repeat(1, 1fr)', sm: 'repeat(1, 1fr)' },
         }}
       >
         {trainings.map((trainig) => (
@@ -39,6 +39,6 @@ export function TraningList({ trainings }: Props) {
           }}
         />
       )}
-    </>
+    </Box>
   );
 }

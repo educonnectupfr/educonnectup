@@ -39,7 +39,7 @@ export function TraningItem({ trainig, sx, ...other }: Props) {
             alt={trainig.school.name}
             src={trainig.school.logo}
             variant="rounded"
-            sx={{ width: 48, height: 48, mb: 2 }}
+            sx={{ width: 48, height: 48 }}
           />
           <Box>
             <Typography variant="subtitle1">{trainig.title}</Typography>

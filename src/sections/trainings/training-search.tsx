@@ -74,7 +74,7 @@ export function TrainingSearch({ sx }: Props) {
       renderInput={(params) => (
         <TextField
           {...params}
-          placeholder="Search..."
+          placeholder="Recherche..."
           slotProps={{
             input: {
               ...params.InputProps,

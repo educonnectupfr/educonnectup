@@ -14,4 +14,7 @@ export interface TraningItemType {
   school: SchoolItem;
   level: string;
   type: string;
+  prcie: number;
+  description: string;
+  domains: string[];
 }
