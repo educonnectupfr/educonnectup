@@ -31,7 +31,7 @@ const trainingData = [
     domains: ['Commerce', 'Marketing', 'Vente'],
     school: {
       address: 'Paris 10080',
-      logo: 'https://copyrightservice.co.uk/_f/4815/9197/8330/logo-1933884_640.jpg',
+      logo: 'https://m.media-amazon.com/images/I/511FfW7oQNL.png',
       name: 'Scholia',
       phoneNumber: '+33885522998',
     },
@@ -51,7 +51,7 @@ const trainingData = [
     domains: ['Commerce', 'Marketing', 'Vente'],
     school: {
       address: 'Paris 10080',
-      logo: 'https://copyrightservice.co.uk/_f/4815/9197/8330/logo-1933884_640.jpg',
+      logo: 'https://m.media-amazon.com/images/I/511FfW7oQNL.png',
       name: 'Scholia',
       phoneNumber: '+33885522998',
     },
@@ -71,7 +71,7 @@ const trainingData = [
     domains: ['Commerce', 'Marketing', 'Vente'],
     school: {
       address: 'Paris 10080',
-      logo: 'https://copyrightservice.co.uk/_f/4815/9197/8330/logo-1933884_640.jpg',
+      logo: 'https://m.media-amazon.com/images/I/511FfW7oQNL.png',
       name: 'Scholia',
       phoneNumber: '+33885522998',
     },
@@ -91,7 +91,7 @@ const trainingData = [
     domains: ['Commerce', 'Marketing', 'Vente'],
     school: {
       address: 'Paris 10080',
-      logo: 'https://copyrightservice.co.uk/_f/4815/9197/8330/logo-1933884_640.jpg',
+      logo: 'https://m.media-amazon.com/images/I/511FfW7oQNL.png',
       name: 'Scholia',
       phoneNumber: '+33885522998',
     },
